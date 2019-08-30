@@ -1,3 +1,14 @@
+let sprites, idle;
+function preload() {
+  sprites = {
+    right: loadImage("assets/player/p1.png"),
+    left: loadImage("assets/player/p2.png"),
+    up: loadImage("assets/player/p3.png"),
+    down: loadImage("assets/player/p4.png")
+  };
+  idle = loadImage("assets/player/s1.png");
+}
+
 class Player {
   _bodyX = 15;
   _bodyY = 15;
