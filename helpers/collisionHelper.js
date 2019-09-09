@@ -11,5 +11,9 @@ const collideLeft = b => {
 };
 
 const collideRight = b => {
-  return b.position.x  > WIDTH - b.w;
+  return b.position.x > WIDTH - b.w;
 };
+
+const haveTheBall = p => {
+  return collideRectRect(p.x, p.y, p.width, p.height, mouseX, mouseY, 50, 75);
+}
